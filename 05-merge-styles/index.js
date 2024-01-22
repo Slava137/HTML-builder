@@ -27,7 +27,7 @@ fs.rm(pathBundleOfStyles, { recursive: true, force: true }, (error) => {
           flags: 'a',
         });
         readStream.pipe(writeStream);
-      })
+      });
     }
   });
 });
